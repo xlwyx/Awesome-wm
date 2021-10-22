@@ -1,0 +1,19 @@
+----------------------------------------------------------*
+*********************** AWESOME ***************************
+----------------------------------------------------------*
+
+# Preparation:
+
+-- install --
+
+sudo pacman -S awesome vicious xcompmgr nitrogen lxappearance
+
+-- begain Awesome --
+
+exec awesome
+
+## We configure the .xinitrc file ##
+
+mkdir .config/awesome && cp /etc/xdg/awesome/rc.lua ~/.config/awesome/
+
+## rc.lua stores all the Awesome configuration, but not the themes, these are a separate creator and arev stored in /usr/share/awesome/themes, we will see them later. ##
