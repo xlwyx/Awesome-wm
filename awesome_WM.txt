@@ -17,3 +17,10 @@ exec awesome
 mkdir .config/awesome && cp /etc/xdg/awesome/rc.lua ~/.config/awesome/
 
 ## rc.lua stores all the Awesome configuration, but not the themes, these are a separate creator and arev stored in /usr/share/awesome/themes, we will see them later. ##
+
+## In case of installing picom, for its correct operation; it is configured in:
+sudo nano /usr/share/examples/picom/picom.sample.conf
+    -- On Transparency/Opacity:
+    inactive-opacity-override = true
+    # inactive-opacity-override = false;
+
