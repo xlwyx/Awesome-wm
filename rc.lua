@@ -48,6 +48,19 @@ end
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
+local themes = {
+    "multicolor",		-- 1
+    "powerarrow",      		-- 2
+    "powerarrow-blue",	 	-- 3
+    "blackburn",		-- 4
+}
+
+-- choose your theme here
+local chosen_theme = themes[3]
+
+local theme_path = string.format("%s/.config/awesome/theme.lua", os.getenv("HOME"), chosen_theme)
+beautiful.init(theme_path)
+
 -- This is used later as the default terminal and editor to run.
 terminal = "terminator"
 editor = os.getenv("nvim") or "nano"
@@ -543,12 +556,12 @@ end)
     --c:emit_signal("request::activate", "mouse_enter", {raise = false})
 -- end)
 
-client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
-client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+-- client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
+-- client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
 -- Adding Gaps
-beautiful.useless_gap = 9
+beautiful.useless_gap = 6
 
 -- Autostart Applications
 awful.spawn.with_shell("picom &")
