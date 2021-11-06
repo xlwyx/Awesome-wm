@@ -6,7 +6,7 @@
 
 -- install --
 
-sudo pacman -S awesome vicious xcompmgr nitrogen lxappearance
+sudo pacman -S awesome vicious xcompmgr feh lxappearance arc-theme papirus-icon-theme
 
 -- begain Awesome --
 
