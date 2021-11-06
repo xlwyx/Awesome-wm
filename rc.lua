@@ -335,7 +335,7 @@ globalkeys = gears.table.join(
 
     -- Rofi
     awful.key({ modkey },            "r",     function ()
-    awful.util.spawn("rofi -show run") end,
+    awful.util.spawn("rofi -show-icons -show run") end,
               {description = "run rofi", group = "awesome"}),
 
     -- Launch Browser
