@@ -62,7 +62,7 @@ local theme_path = string.format("%s/.config/awesome/theme.lua", os.getenv("HOME
 beautiful.init(theme_path)
 
 -- This is used later as the default terminal and editor to run.
-terminal = "terminator"
+terminal = "sakura"
 editor = os.getenv("nvim") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
