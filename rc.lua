@@ -570,3 +570,4 @@ awful.spawn.with_shell("feh --bg-fill ~/Pictures/Wallpapers/looplinux-wallpaper-
 awful.spawn.with_shell("fcitx5")
 awful.spawn.with_shell("xscreensaver --nosplash")
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")
+awful.spawn.with_shell("~/.config/audiocfg.sh")
