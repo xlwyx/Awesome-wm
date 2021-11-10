@@ -5,22 +5,21 @@
 # Preparation:
 
 -- install --
-
-sudo pacman -S awesome vicious xcompmgr feh lxappearance arc-theme papirus-icon-theme
+awesome vicious xcompmgr feh lxappearance arc-theme papirus-icon-theme
 
 -- begain Awesome --
 
+## We configure the .xinitrc file ##
 exec awesome
 
-## We configure the .xinitrc file ##
-
+## Here, we found the default awesome config
 mkdir .config/awesome && cp /etc/xdg/awesome/rc.lua ~/.config/awesome/
 
 ## rc.lua stores all the Awesome configuration, but not the themes, these are a separate creator and arev stored in /usr/share/awesome/themes, we will see them later. ##
 
 ## In case of installing picom, for its correct operation; it is configured in:
-sudo nano /usr/share/examples/picom/picom.sample.conf
-    -- On Transparency/Opacity:
+doas nano /usr/share/examples/picom/picom.sample.conf
+    -- On Transparency/Opacity
     inactive-opacity-override = true
     # inactive-opacity-override = false;
 
