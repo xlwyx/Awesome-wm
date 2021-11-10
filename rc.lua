@@ -564,9 +564,9 @@ end)
 beautiful.useless_gap = 6
 
 -- Autostart Applications
-awful.spawn.with_shell("picom &")
-awful.spawn.with_shell("pulseaudio -D &")
-awful.spawn.with_shell("feh --bg-fill ~/Pictures/Wallpapers/looplinux-wallpaper-v2/92.jpg &")
-awful.spawn.with_shell("fcitx5 &")
-awful.spawn.with_shell("xscreensaver --nosplash &")
+awful.spawn.with_shell("picom")
+awful.spawn.with_shell("pulseaudio -D")
+awful.spawn.with_shell("feh --bg-fill ~/Pictures/Wallpapers/looplinux-wallpaper-v2/92.jpg")
+awful.spawn.with_shell("fcitx5")
+awful.spawn.with_shell("xscreensaver --nosplash")
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")
