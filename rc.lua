@@ -62,7 +62,7 @@ local theme_path = string.format("%s/.config/awesome/theme.lua", os.getenv("HOME
 beautiful.init(theme_path)
 
 -- This is used later as the default terminal and editor to run.
-terminal = "sakura"
+terminal = "kitty"
 editor = os.getenv("nvim") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -335,7 +335,7 @@ globalkeys = gears.table.join(
 
     -- Rofi
     awful.key({ modkey },            "r",     function ()
-    awful.util.spawn("rofi -show-icons -show run") end,
+    awful.util.spawn("rofi -show-icons -show drun") end,
               {description = "run rofi", group = "awesome"}),
 
     -- Launch Browser
@@ -568,6 +568,6 @@ awful.spawn.with_shell("picom")
 awful.spawn.with_shell("pulseaudio -D")
 awful.spawn.with_shell("feh --bg-fill ~/Pictures/Wallpapers/looplinux-wallpaper-v2/92.jpg")
 awful.spawn.with_shell("fcitx5")
-awful.spawn.with_shell("xscreensaver --nosplash")
+awful.spawn.with_shell("xscreensaver --no-splash")
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")
 awful.spawn.with_shell("~/.config/audiocfg.sh")
