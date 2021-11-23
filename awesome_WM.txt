@@ -5,7 +5,7 @@
 # Preparation:
 
 -- install --
-awesome vicious xcompmgr feh nitrogen lxappearance arc-theme papirus-icon-theme opendoas Adapta font-awesome
+awesome vicious xcompmgr feh nitrogen lxappearance arc-theme papirus-icon-theme opendoas Adapta font-awesome wireless_tools
 
 -- begain Awesome --
 
