@@ -345,16 +345,16 @@ globalkeys = gears.table.join(
 
     -- Launch FM
     awful.key({ modkey },            "y",     function ()
-    awful.util.spawn("pcmanfm") end,
-              {description = "Pcmanfm", group = "applications"}),
+    awful.util.spawn("thunar") end,
+              {description = "Thunar", group = "applications"}),
 
     -- Launch IDE
     awful.key({ modkey },            "v",     function ()
-    awful.util.spawn("atom") end,
-              {description = "Atom", group = "applications"}),
+    awful.util.spawn("code") end,
+              {description = "Code", group = "applications"}),
 
     awful.key({ }, "Print", function () awful.util.spawn("scrot -e 'mv $f ~/screenshots/ 2>/dev/null'") end),
-    	
+    
     awful.key({ modkey }, "x",
               function ()
                   awful.prompt.run {
@@ -561,13 +561,13 @@ end)
 -- }}}
 
 -- Adding Gaps
-beautiful.useless_gap = 6
+beautiful.useless_gap = 4
 
 -- Autostart Applications
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("pulseaudio -D")
+awful.spawn.with_shell("nitrogen --restore --set-auto")
 awful.spawn.with_shell("feh --bg-fill ~/Pictures/Wallpapers/looplinux-wallpaper-v2/92.jpg")
 awful.spawn.with_shell("fcitx5")
 awful.spawn.with_shell("xscreensaver --no-splash")
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")
-awful.spawn.with_shell("~/.config/audiocfg.sh")
