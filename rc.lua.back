@@ -524,31 +524,28 @@ awful.rules.rules = {
     },
    
     { rule = {
-        class = "Pcmanfm"
-      },properties = { maximized_vertical = true, maximized_horizontal = true, tag = "3: " }
-    },
-
-    { rule = {
-        class = "org.pwmt.zathura"
+        class = "Zathura", "Pcmanfm"
       },properties = { border_width = 4, floating = true, tag = "3: " }
     },
 
     { rule_any = {
         class = { "Lxappearance","feh","pavucontrol","mpv","Fcitx5","Arandr","simple-scan" },
-        except_any = { role = {"list" }
       },properties = { floating = true } }
     },
 
     { rule_any = {
-        class = {"stella","mGBA","etr","dreamchess","Minetest","lbreakout2" },
-        except_any = { role = {"games" } 
+        class = {"stella","mgba","etr","dreamchess","lbreakout2" },
       },properties = { border_width = 3, floating = true, tag = "6: " } }
     },
-
+    
     { rule_any = {
-        class = {"TelegramDesktop","signal" },
-        except_any = { role = {"chat" } 
-      },properties = {floating = true, tag = "5: " } } 
+        instance = { "Minetest", "Minetest" }
+      },properties = { screen = 1, tag = "6: ", fullscreen = true }
+    },
+ 
+    { rule = {
+        class = {"TelegramDesktop" }
+      },properties = {screen = 1, tag = "5: ", titlebars_enabled = false } } 
     },
 
     -- Floating clients.
