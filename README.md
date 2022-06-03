@@ -3,7 +3,7 @@
 AwesomeWM is a dynamic window manager for the X Window System developed in the C and Lua programming languages. Lua is also used for configuring and extending the window manager. Its development began as a fork of dwm. It aims to be extremely small and fast, yet extensively customizable.
 
 ![image](https://user-images.githubusercontent.com/83835896/140631977-9cf4f761-f303-41f2-8e26-3d6c61c49e6e.png)
-![image](https://user-images.githubusercontent.com/83835896/140631984-37fe4faa-5172-4996-b627-12484ab30aeb.png)
+![image](https://user-images.githubusercontent.com/83835896/171799195-09d3d97f-4ed2-40bb-9482-2e263e3fb687.png)
 ![image](https://user-images.githubusercontent.com/83835896/140632001-9ce7fd97-8b34-4898-bfb7-f51f129cb6a9.png)
 ![image](https://user-images.githubusercontent.com/83835896/140632006-fbaf76b2-16c2-4e50-9be6-2ef8ac1c20b7.png)
 ![image](https://user-images.githubusercontent.com/83835896/140634004-4cdf6c48-0eb4-4b5b-a7cb-545220fefbaf.png)
