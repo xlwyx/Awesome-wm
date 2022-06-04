@@ -11,8 +11,10 @@ AwesomeWM is a dynamic window manager for the X Window System developed in the C
 
 
 >> ------------------------------------------------------------------ Next --------------------------------------------------------- <<<
-![image](https://user-images.githubusercontent.com/83835896/140631547-50d26a2c-6161-417d-9ed4-7f8107252961.png)
-![image](https://user-images.githubusercontent.com/83835896/140631589-33ac05ea-b761-4c7e-b6f9-f820ac0ada66.png)
+![image](https://user-images.githubusercontent.com/83835896/171982620-289b32f4-3ac4-4b13-9619-aaf81a2a3940.png)
+![image](https://user-images.githubusercontent.com/83835896/171982647-c30e859b-1410-4cf1-98dd-3844e53e4e19.png)
+![image](https://user-images.githubusercontent.com/83835896/171982670-ab65a22b-f3e9-4deb-95d1-cb1235d17e95.png)
+![image](https://user-images.githubusercontent.com/83835896/171982692-bed4ed6f-f5e6-47a9-bc11-1c231fedf874.png)
 ![image](https://user-images.githubusercontent.com/83835896/171798768-80aa6c3a-1005-41e8-92ba-13b13e859614.png)
 ![image](https://user-images.githubusercontent.com/83835896/171798887-744e2857-05be-47ac-8391-6f85ecf7ab95.png)
 ![image](https://user-images.githubusercontent.com/83835896/171981830-91a2d7c0-f75d-4dd5-931f-7b9bcf879bd2.png)
