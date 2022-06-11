@@ -344,8 +344,8 @@ globalkeys = gears.table.join(
 
     -- Launch Browser
     awful.key({ modkey },            "b",     function ()
-    awful.util.spawn("chromium") end,
-              {description = "Chromium", group = "applications"}),
+    awful.util.spawn("firefox") end,
+              {description = "Firefox", group = "applications"}),
 
     -- Launch FM
     awful.key({ modkey },            "y",     function ()
@@ -509,41 +509,42 @@ awful.rules.rules = {
     },
 
     { rule = {
-      class = "URxvt"
+        class = "URxvt"
       },properties = { maximized_vertical = true, maximized_horizontal = true }
     },
 
     { rule = {
-      instance = "Chromium"
+        class = "Firefox"
+      },properties = { screen = 1, border_width = 6, tag = "www", floating = true } },
+
+
+    --{ rule = {
+      --instance = "Chromium"
+      --},properties = { tag = mytagobject }
+    --},
+
+    --{ rule = {
+      --instance = "chromium"
+      --},properties = { tag = "www" }
+    --},
+
+    { rule = {
+      instance = "Code - oss"
       },properties = { tag = mytagobject }
     },
 
-    { rule = { instance = "chromium"
-      },properties = { tag = "www" }
-    },
-
     { rule = {
-        class = "Thunderbird"
-      },properties = { border_width = 2, floating = true,  tag = "mail" }
-    },
-
-    { rule = {
-        class = "Atom"
-      },properties = { border_width = 3, floating = true, tag = "bit" }
-    },
-
-    { rule = {
-        class = "Zathura"
-      },properties = { border_width = 4, floating = true, tag = "files" }
-    },
-
-    { rule = {
-        class = "Pcmanfm"
-      },properties = { border_width = 6, fullscreen = true, tag = "files" }
+      instance = "code - oss"
+      },properties = { tag= "files", floating = true }
     },
 
     { rule_any = {
-        class = { "lxappearance", "feh", "pavucontrol", "mpv", "fcitx5-config-qt", "Arandr", "simple-scan"},
+        class = { "Zathura", "Pcmanfm" }
+      },properties = { border_width = 4, floating = true, tag = "files" }
+    },
+
+    { rule_any = {
+        class = { "lxappearance", "feh", "pavucontrol", "mpv", "fcitx5-config-qt", "Arandr", "simple-scan", "Cheese" }
       },properties = { floating = true }
     },
 
@@ -562,19 +563,9 @@ awful.rules.rules = {
       },properties = { tag = "files" }
     },
 
-    { rule = {
-        name = "Minetest",
-      },properties = { screen = 1, tag = "games", titlebars_enabled = false, fullscreen = true }
-    },
-
-    { rule = {
-        class = "TelegramDesktop"
-      },properties = { screen = 1, tag = "mail", titlebars_enabled = false, floating = true }
-    },
-
-    { rule = {
-        class = "Signal"
-      },properties = { screen = 1, tag = "mail", titlebars_enabled = false, floating = true }
+    { rule_any = {
+        class = { "TelegramDesktop", "Signal", "Thunderbird" }
+      },properties = { screen = 1, borderwidth = 3, tag = "mail", titlebars_enabled = false, floating = true }
     },
 
     -- Floating clients.
@@ -649,5 +640,4 @@ awful.spawn.with_shell("fcitx5")
 awful.spawn.with_shell("xscreensaver --no-splash")
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")
 awful.spawn.with_shell("xrdb ~/.Xresources")
-
 
