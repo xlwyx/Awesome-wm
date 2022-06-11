@@ -21,14 +21,14 @@ theme.bg_minimize   = "#e4cf96"
 theme.bg_systray    = theme.bg_normal
 
 theme.fg_normal     = "#2e3436"
-theme.fg_focus      = "#6d7273"
+theme.fg_focus      = "#683844"
 theme.fg_urgent     = "#4e4750"
 theme.fg_minimize   = "#212c3b"
 
 theme.useless_gap   = dpi(0)
 theme.border_width  = dpi(2)
-theme.border_normal = "#dae3e0"
-theme.border_focus  = "#729fcf"
+theme.border_normal = "#6d4192"
+theme.border_focus  = "#b77c74"
 theme.border_marked = "#eeeeec"
 
 -- IMAGES
