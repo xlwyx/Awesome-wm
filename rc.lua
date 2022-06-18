@@ -513,14 +513,23 @@ awful.rules.rules = {
       },properties = { maximized_vertical = true, maximized_horizontal = true }
     },
 
-    { rule = {
-        class = "Firefox"
-      },properties = { screen = 1, border_width = 6, tag = "www", floating = true } },
+    --{ rule = {
+        --class = "Firefox"
+      --},properties = { screen = 1, border_width = 6, tag = "www", floating = true } },
 
+
+    { rule = {
+        class = "Waterfox"
+      },properties = { screen = 1, border_width = 6, tag = "www", floating = true } },
 
     --{ rule = {
       --instance = "Chromium"
       --},properties = { tag = mytagobject }
+    --},
+
+    --{ rule = {
+      --instance = "chromium"
+      --},properties = { tag = "www" }
     --},
 
     --{ rule = {
